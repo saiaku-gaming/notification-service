@@ -1,4 +1,4 @@
-package com.valhallagame.notificationserviceclient.model;
+package com.valhallagame.notificationserviceclient.message;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

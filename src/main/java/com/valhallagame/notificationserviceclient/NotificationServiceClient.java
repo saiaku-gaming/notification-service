@@ -5,8 +5,8 @@ import java.io.IOException;
 import com.valhallagame.common.DefaultServicePortMappings;
 import com.valhallagame.common.RestCaller;
 import com.valhallagame.common.RestResponse;
-import com.valhallagame.notificationserviceclient.model.NotificationListenerParameter;
-import com.valhallagame.notificationserviceclient.model.UnregisterNotificationListenerParameter;
+import com.valhallagame.notificationserviceclient.message.NotificationListenerParameter;
+import com.valhallagame.notificationserviceclient.message.UnregisterNotificationListenerParameter;
 
 public class NotificationServiceClient {
 	private static NotificationServiceClient notificationServiceClient;
