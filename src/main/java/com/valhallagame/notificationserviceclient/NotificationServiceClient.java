@@ -2,6 +2,7 @@ package com.valhallagame.notificationserviceclient;
 
 import java.io.IOException;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.valhallagame.common.DefaultServicePortMappings;
 import com.valhallagame.common.RestCaller;
 import com.valhallagame.common.RestResponse;
@@ -32,9 +33,9 @@ public class NotificationServiceClient {
 		return notificationServiceClient;
 	}
 
-	public RestResponse<String> ping()
+	public RestResponse<JsonNode> ping()
 			throws IOException {
-		return restCaller.getCall(notificationServiceServerUrl + "/", String.class);
+		return restCaller.getCall(notificationServiceServerUrl + "/", JsonNode.class);
 	}
 
 	public RestResponse<String> registerNotificationListener(String gameSessionId, String address, int port)
