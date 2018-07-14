@@ -32,6 +32,11 @@ public class NotificationServiceClient {
 		return notificationServiceClient;
 	}
 
+	public RestResponse<String> ping()
+			throws IOException {
+		return restCaller.getCall(notificationServiceServerUrl + "/", String.class);
+	}
+
 	public RestResponse<String> registerNotificationListener(String gameSessionId, String address, int port)
 			throws IOException {
 		return restCaller.postCall(notificationServiceServerUrl + "/v1/notification/register-notification-listener",
